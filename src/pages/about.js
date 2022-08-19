@@ -5,6 +5,7 @@ import {Link} from 'gatsby';
 import {graphql} from 'gatsby';
 import RecipesList from '../components/RecipesList';
 
+
 export const query = graphql`
   {
     allContentfulRecipe(
@@ -27,7 +28,7 @@ export const query = graphql`
 const About = ({data}) => {
   
   return (
-    <Layout>
+    <Layout title={"About Us"} description={"this is about page"}>
       <main className="page">
         <section className="about-page">
           <article>

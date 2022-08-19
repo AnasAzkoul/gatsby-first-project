@@ -1,10 +1,11 @@
 import React from 'react'
 import Layout from '../components/Layout'
 
+
 const Error = () => {
   return (
-    <Layout>
-      <main className='error-page'>
+    <Layout title={"404"}>
+      <main className="error-page">
         <section>
           <h1>404</h1>
           <h3>Page Not Found</h3>

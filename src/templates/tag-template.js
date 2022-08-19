@@ -4,9 +4,10 @@ import RecipesList from '../components/RecipesList';
 import { graphql } from 'gatsby';
 
 const TagTemplate = ({data, pageContext}) => {
-  const recipes = data.allContentfulRecipe.nodes
+  const recipes = data.allContentfulRecipe.nodes; 
+  console.log(pageContext);
   return (
-    <Layout>
+    <Layout title={pageContext.tag}>
       <main className='page'>
         <h2>{pageContext.tag}</h2>
         <div className='tag-recipes'>

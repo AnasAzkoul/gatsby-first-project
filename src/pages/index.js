@@ -4,10 +4,10 @@ import {StaticImage} from 'gatsby-plugin-image';
 import AllRecipes from '../components/AllRecipes';
 
 
+
 const Home = () => {
-   
   return (
-    <Layout>
+    <Layout title={"Home"} description={"this is home page"}>
       <main className="page">
         <header className="hero">
           <StaticImage

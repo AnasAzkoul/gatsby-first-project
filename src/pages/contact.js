@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import {graphql} from 'gatsby';
 import RecipesList from '../components/RecipesList';
 
+
 export const query = graphql`
   {
     allContentfulRecipe(
@@ -24,7 +25,7 @@ export const query = graphql`
 
 const Contact = ({data}) => {
   return (
-    <Layout>
+    <Layout title={"Contact"}>
       <main className="page">
         <section className="contact-page">
           <article className="contact-info">
@@ -47,13 +48,17 @@ const Contact = ({data}) => {
             </p>
           </article>
           <article>
-            <form action="form contact-form">
+            <form
+              className="form contact-form"
+              action="https://formspree.io/f/mwkzkdob"
+              method="POST"
+            >
               <div className="form-row">
                 <label htmlFor="name">Your name</label>
                 <input type="text" name="name" id="name" />
               </div>
               <div className="form-row">
-                <label htmlFor="email">Your name</label>
+                <label htmlFor="email">Your email</label>
                 <input type="email" name="email" id="email" />
               </div>
               <div className="form-row">

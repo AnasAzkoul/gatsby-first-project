@@ -18,7 +18,7 @@ const RecipeTemplate = ({data}) => {
   const {tags, instructions, ingredients, tools} = content; 
   
   return (
-    <Layout>
+    <Layout title={title}>
       <main className="page">
         <div className="recipe-page">
           {/* {hero} */}

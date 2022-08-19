@@ -1,10 +1,8 @@
-import React from 'react'
-import { graphql } from 'gatsby';
+import React from 'react';
 import Layout from '../components/Layout';
 import Gallery from '../components/examples/Gallery';
-const Testing = () => {
 
-  
+const Testing = () => {  
   return (
     <Layout>
       <main className="page">
